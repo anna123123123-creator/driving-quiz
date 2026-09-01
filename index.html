@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>科目一模拟题练习 · Driving Theory Quiz</title>
+<meta name="description" content="免费开源、纯浏览器运行的驾照科目一模拟题练习工具，内置真实交通法规选择题，答题即时反馈对错，记录正确率。不联网。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>科目一<span class="accent">模拟题</span>练习</h1>
+    <p class="tagline">内置 15 道真实交通法规单选题，答题后立即显示对错和简要解析，随机顺序练习。<strong>仅供练习参考，请以官方最新题库为准。</strong></p>
+  </header>
+
+  <main class="layout">
+    <div class="score-bar">
+      <span>正确率：<strong id="scoreText">0 / 0</strong></span>
+      <button id="btnRestart" class="btn btn-ghost">重新开始</button>
+    </div>
+
+    <div class="quiz-card">
+      <div class="q-num" id="qNum">第 1 题</div>
+      <p class="q-text" id="qText"></p>
+      <div class="options" id="optionsWrap"></div>
+      <p class="explain" id="explainText"></p>
+      <button id="btnNext" class="btn btn-primary" disabled>下一题 →</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>MIT 协议开源，题库固定内置，不联网、不上传答题记录。</p>
+    <p>想要在线报名、学时打卡、科目进度追踪、练车预约的完整驾校管理系统？<a href="https://inzyxuashop.com/jiaxiao-yuanma.html" target="_blank" rel="noopener">看看完整版驾校报名管理源码 →</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
